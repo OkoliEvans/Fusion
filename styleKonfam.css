@@ -198,9 +198,9 @@ justify-content: space-between;
 
 .check .button:active {
     
-        margin-right: 12px;
+        margin-right: 2px;
         position: relative;
-        padding-top: 12px;
+        padding-top: 2px;
     }
 
 
