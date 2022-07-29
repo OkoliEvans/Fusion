@@ -196,6 +196,14 @@ justify-content: space-between;
     border: 1px aqua solid;
 }
 
+.check .button:active {
+    
+        margin-right: 12px;
+        position: relative;
+        padding-top: 12px;
+    }
+
+
 .form {
     height: 100vh;
 }
