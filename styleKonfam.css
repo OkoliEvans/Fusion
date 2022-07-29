@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@1,300&family=Lobster&family=Pacifico&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    background: rgb(2, 0, 17);
+    line-height: 1.6;
+    color: aqua;
+}
+
+.container {
+    background-image: url(/spacex.gif);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+height: 70px;
+justify-content: space-between;
+}
+
+.logo {
+    color: rgb(143, 214, 11);
+    font-size: 20px;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+
+.logo .lg {
+    color: red;
+}
+
+.navbar ul {
+    display: flex;
+    float: right;
+    margin-right: 150px;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+    color:  rgb(17, 243, 224);
+}
+
+.navbar a:hover {
+    border-bottom: 2px teal solid;
+    cursor: pointer;
+}
+
+.connect {
+    background: rgb(2, 0, 17) ;
+    float: right;
+    padding-top: 10px;
+    margin-right: 5px;
+    color: rgb(143, 214, 11);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.connect:active {
+    margin-right: 12px;
+    position: relative;
+    padding-top: 12px;
+}
+
+.connect:hover {
+    color: aqua;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid aqua;
+    padding: 10px;
+}
+
+#logout {
+    float: right;
+    padding-top: 10px;
+    margin-right: 10px;
+    color: rgb(204, 12, 204);
+    font-size: 16px;
+    background: rgb(2, 0, 17) ;
+    cursor: pointer;
+}
+
+#logout:active {
+    margin-right: 12px;
+    position: relative;
+    padding-top: 12px;
+}
+
+/* introduction text */
+.intro {
+    padding-top: 150px;
+    margin-left: 200px;
+    position: relative;
+} 
+
+.intro .introheader {
+ font-size: 20px;
+ color: rgb(243, 7, 125);   
+}
+
+.intro .introtext {
+    font-size: 15px;
+    color: rgb(174, 238, 233);
+    padding-top: 8px;
+}
+
+.introtext .genuine {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.introtext .fake {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.intro .introfaq {
+    padding-top: 40px;
+    color: rgb(243, 7, 125);
+    font-size: 20px;
+}
+
+.introtext .confirm {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.introtext .batchnumber {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+/* check widget */
+.check {
+    position: relative;
+    float: right;
+    position: relative;
+    padding-top: 60px;
+    height: 50px;
+    width: 400px;
+    }
+
+.check input {
+    height: 50px;
+    width: 300px;
+    color: #ccc;
+}
+ 
+
+.check .checktext {
+    font-size: 18px;
+    color: rgb(8, 37, 37);
+    font-weight: bold;
+}
+
+.check .button {
+    border: none;
+    background: darkgreen;
+    height: 30px;
+    width: 90px;
+    border-radius: 2px;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.check .button:hover {
+    cursor: pointer;
+    color: aqua;
+    background: #000;
+    border: 1px aqua solid;
+}
+
+.form {
+    height: 100vh;
+}
+
+.form-banner {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    padding-left: 120px;
+}
+
+.form-banner input[type= 'text'],
+.form-banner input[type= 'email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.form-control {
+    margin: 15px 0;
+}
+
+.btn {
+    border: none;
+    background: rgb(10, 94, 10);
+    height: 30px;
+    width: 150px;
+    border-radius: 2px;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: aqua;
+    background: #000;
+    border: 1px aqua solid;
+}
+
+.send {
+    padding-left: 120px;
+}
+
+.send .btnTx {
+    border: none;
+    background: rgb(10, 94, 10);
+    height: 30px;
+    width: 150px;
+    border-radius: 2px;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.send .btnTx:hover {
+    cursor: pointer;
+    color: aqua;
+    background: #000;
+    border: 1px aqua solid;
+}
+
+.send .btnTx:active {
+    position: relative;
+    margin-left: 5px;
+}
+/* footer */
+
+.footer {
+    background-image: url(./spacex.gif);
+    
+    border-top: 2px solid rgb(10, 6, 49);
+    position: relative;
+}
+
+.linkfooter {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.linkfooter .footerlinks {
+    position: relative;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+.linkfooter a {
+    color: aqua;
+    font-size: 13px;
+}
+
+.linkfooter a:hover {
+    color: teal;
+}
+
+
+.linkfooter .socials {
+    padding-top: 60px;
+    margin-left: 100px;
+}
+
+.socials a {
+    text-align: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.socials a:hover {
+    color: teal;
+}
+
+#mainfooter {
+    text-align: center;
+    justify-content: center;
+    background: rgb(5, 2, 26);
+    padding: 13px;
+    font-size: 13px;
+}
+
+.footer .live {
+    float: right;
+    font-size: 11px;
+    color: teal;
+}
+
+.footer .live:hover {
+    color: red;
+}
+
+

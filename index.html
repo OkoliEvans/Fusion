@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styleKonfam.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App: product authenticator</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag. -->
+        <div class="container">
+            <button id="login" class="connect">Connect wallet</button>
+            <button id="logout" type="submit">Log out</output></button>
+            
+            <div class="navbar">
+               <h2 class="logo">Kon<span class="lg">fam</span> </h2>
+               
+                <nav>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+             
+            <div class="intro">
+                <section class="check">
+
+                    <div class="checkbatch">
+                        <input class="checktext" type="text" id="Batch number" placeholder="Enter batch no." required> <br>
+                    </div>
+
+                    <div class="checkbutton">
+                        <button onclick="getProduct()" class="button">check</button>
+                    </div>
+                </section>
+
+                <h2 class="introheader">What is Konfam?</h2>
+                <p class="introtext">
+                    Konfam is a Web3 product authenticator built <br>
+                     on the blockchain. It's a blockchain database <br>
+                    hosting approved products: pharmaceuticals, health <br>
+                     and consumables. Consumers can easily <i>konfam</i> if a <br>
+                    product is <span class="genuine">genuine</span>  or
+                      <span class="fake">harmful.</span> 
+                </p>
+
+                <h2 class="introfaq"> How to Konfam? </h2>
+                <p class="introtext">Enter the batch number of the product <br>
+                     in the interface labelled <span class="batchnumber">Enter batch no.</span> 
+                     and click <span class="confirm">check.</span>
+                </p>
+                
+            </div>
+        </div>
+
+            <!--<script src="https://cdn.jsdelivr.net/npm/web@latest/dist/web3.min.js"></script> --
+
+            <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+            <script src="./web3.min.js"></script> -->
+            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7/web3.min.js"></script>
+            
+            <script src="./main2.js"></script>
+            <script src="./index.js"></script>
+
+        <div class="footer">
+            <footer class="linkfooter">
+               
+                <ul class="footerlinks">
+                    <li><a href="#">Developer</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="https://github.com/OkoliEvans">github</a></li>
+                </ul>
+
+                <div class="socials">
+                        <a href="https://fb.com/evansdegreat"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="https://twitter.com/OkoliEvans"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="https://instagram.com/evansdegreat"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://fb.com/evansdegreat"><i class="fab fa-medium fa-2x"></i></a>
+                </div>
+
+            </footer>
+            <footer id="mainfooter">
+                <p class="footertext"> Konfam &copy; 2022.</p>
+            </footer>
+            <p class="live">THIS IS A LIVING WEBSITE</p>
+        </div>
+
+        <!--
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="./index.js"></script>
+  </body>
+</html>
