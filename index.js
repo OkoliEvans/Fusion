@@ -44,7 +44,7 @@ const renderContents = () => {
   );
   pTag.appendChild(pText);
 
-  const inputTag = document.createElement("input");
+  const inputTag = document.getElementById("amount");
   inputTag.value = 0;
   inputTag.type = "number";
 
@@ -53,7 +53,7 @@ const renderContents = () => {
   buttonTag.appendChild(buttonText);
 
   buttonTag.addEventListener("click", () => {
-    const inputElement = document.getElementsByTagName("input");
+    const inputElement = document.getElementById("deposit");
     const count = inputElement[0].value;
     mint(count);
   });

@@ -234,6 +234,23 @@ justify-content: space-between;
     font-size: 16px;
 }
 
+.form-control2 {
+    padding-top: 8px;
+}
+
+.form-control2 input[type= 'text'] {
+    margin-bottom: 10px;
+}
+
+.form-control2 input[type= 'text'],
+.form-control2 input[type= 'number'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 30%;
+    padding: 3px;
+    font-size: 16px;
+}
+
 .form-control {
     margin: 15px 0;
 }

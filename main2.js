@@ -26,7 +26,7 @@ window.addEventListener('load', async () => {
   });
   console.log (window.web3.currentProvider);
 
-  var contractAddress = '0xDbF7d7676622E32b0A1B51Cc7ca5CbdBc0502290';
+  var contractAddress = '0x7C35312380a45120124006381CA6B18FEEFC38bF';
 var abi = JSON.parse ([
 	{
 		"inputs": [
