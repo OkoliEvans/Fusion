@@ -160,7 +160,7 @@ web3.eth.getAccounts(function(err, accounts) {
 
 //Smart contract functions
 function sendAddProduct() {
-    ConfirmQuality = $("#newProduct").val();
+    ConfirmQuality(_batchNumber) = $("#newProduct").val();
     contract.methods.addProduct (_product, _batchNumber).send( {from: account}).then( function(tx) {
       console.log("Transaction: ", tx);
     });
@@ -169,9 +169,9 @@ function sendAddProduct() {
   }
   
   function getProduct() {
-    contract.methods.confirmProduct(_batchNumber).call().then( function( ConfirmQuality ) {
-      console.log("info: ", ConfirmQuality+ " Product is GENUINE");
-      document.getElementById('lastInfo').innerHTML = ConfirmQuality;
+    contract.methods.confirmProduct(_batchNumber).call().then( function(ConfirmQuality) {
+      console.log("info: ", ConfirmQuality(_batchNumber)+ " Product is GENUINE");
+      document.getElementById('lastInfo').innerHTML = ConfirmQuality(_batchNumber);
     });
   }
 
