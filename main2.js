@@ -163,6 +163,7 @@ function sendAddProduct() {
     ConfirmQuality(_batchNumber) = $("#newProduct").val();
     Konfam.methods.addProduct (_product, _batchNumber).send( {from: account}).then( function(tx) {
       console.log("Transaction: ", tx);
+	  Event.preventDefault();
     });
     $("#newProduct").val('');
 	
@@ -172,6 +173,7 @@ function sendAddProduct() {
     Konfam.methods.confirmProduct(_batchNumber).call().then( function(ConfirmQuality) {
       console.log("info: ", ConfirmQuality(_batchNumber)+ " Product is GENUINE");
       document.getElementById('lastInfo').innerHTML = ConfirmQuality(_batchNumber);
+	  Event.preventDefault();
     });
   }
 

@@ -203,6 +203,13 @@ justify-content: space-between;
         padding-top: 2px;
     }
 
+    #lastinfo {
+        background: #b4becb;
+        color: teal;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
 
 .form {
     height: 100vh;
